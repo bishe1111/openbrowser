@@ -82,7 +82,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.back_btn.set_sensitive(webview.can_go_back())
         self.forward_btn.set_sensitive(webview.can_go_forward())
 
-    def on_uri_changed(self, webview, prop):
+    def on_uri_chang(self, webview, prop):
         self.url_entry.set_text(webview.get_uri() or "")
 
 class MyApp(Gtk.Application):
